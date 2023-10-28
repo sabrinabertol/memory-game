@@ -147,9 +147,10 @@
 <style>
 	.cards {
 		display: grid;
-		grid-template-columns: repeat(5, 1fr);
 		gap: 0.4rem;
-		margin-bottom: 1.5rem;
+		margin-bottom: 2rem;
+		grid-template-columns: repeat(5, 1fr);
+
 		@media (max-width: 768px) {
 			grid-template-columns: repeat(4, 1fr);
     	}
@@ -162,12 +163,6 @@
 		background-color: var(--bg-2);
 		transition: rotate 0.3s ease-out;
 		transform-style: preserve-3d;
-
-		@media (max-width: 768px) {
-			height: 90px;
-			width: 90px;
-			font-size: 3rem;
-    	}
 
 		&.selected {
 			border: 4px solid var(--border);
@@ -191,6 +186,12 @@
 			transition: opacity 0.3s ease-out;
 			opacity: 0.4;
 		}
+
+		@media (max-width: 768px) {
+			height: 90px;
+			width: 90px;
+			font-size: 3rem;
+    	}
 	}
 
 	.matches {
@@ -198,8 +199,10 @@
 		gap: 1rem;
 		margin-block: 2rem;
 		font-size: 3rem;
+		grid-template-columns: repeat(10, 1fr);
+		
 		@media (max-width: 768px) {
-			grid-template-columns: repeat(6, 1fr);
+			grid-template-columns: repeat(5, 1fr);
     	}
 	}
 

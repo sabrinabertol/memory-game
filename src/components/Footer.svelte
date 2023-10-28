@@ -45,8 +45,9 @@
   footer a {
     margin: 0 12px;
     color:  var(--txt-3);
-    &.hover {
-        opacity: 0.7;
-    }
+  }
+
+  footer a:hover {
+	opacity: 0.7;
   }
 </style>
